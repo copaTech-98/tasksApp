@@ -1,0 +1,20 @@
+version: "1.0"
+name: my-app
+
+env:
+  - key: NODE_ENV
+    value: production
+
+build:
+  frontend:
+    builder: "heroku/nodejs"
+    context: "."
+    dockerfile: "Dockerfile"
+    environment:
+      NODE_ENV: production
+    skip_install: true
+    command: "ionic build"
+
+start:
+  web:
+    command: "ionic serve"

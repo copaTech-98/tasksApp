@@ -11,6 +11,7 @@ import "./Tab1.css";
 import React, { useEffect, useState } from "react";
 import meditation from "../assets/img/meditation.png";
 import {
+  Alert,
   Box,
   Button,
   Chip,
@@ -173,7 +174,20 @@ const Tab1 = (props: Props) => {
       <IonPage style={{ background: "#F7F7F7" }} id="main-content">
         <IonContent fullscreen style={{ background: "#F7F7F7 !important" }}>
           <Nav isnav={true} />
-          <Box minHeight={"calc(100vh - 165.5px)"} height="max-content">
+          <Box padding="10px">
+            <Link
+              to={{
+                pathname:
+                  "https://www.mediafire.com/file/cxwvfwqt58w2tmz/com.focustask.apk/file",
+              }}
+              target="_blank"
+            >
+              <Alert severity="warning" variant="filled">
+                Descargar APP!
+              </Alert>
+            </Link>
+          </Box>
+          <Box height="max-content">
             <Box width="100%" display={"flex"} justifyContent="center">
               <Button>
                 <Chip

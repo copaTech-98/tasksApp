@@ -22,28 +22,28 @@ export default function AppBar() {
           }}
         >
           <li>
-            <IconButton sx={{ display: "flex", flexDirection: "column" }}>
-              <IonIcon icon={home}></IonIcon>
-              <Link to={"/home"}>
+            <Link to={"/home"}>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <IonIcon icon={home}></IonIcon>
                 <Typography sx={{ fontSize: "13px" }}>Home</Typography>
-              </Link>
-            </IconButton>
+              </IconButton>
+            </Link>
           </li>
           <li>
-            <IconButton sx={{ display: "flex", flexDirection: "column" }}>
-              <IonIcon icon={timer}></IonIcon>
-              <Link to={"/timer"}>
+            <Link to={"/timer"}>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <IonIcon icon={timer}></IonIcon>
                 <Typography sx={{ fontSize: "13px" }}>Timer</Typography>
-              </Link>
-            </IconButton>
+              </IconButton>
+            </Link>
           </li>
           <li>
-            <IconButton sx={{ display: "flex", flexDirection: "column" }}>
-              <IonIcon icon={list}></IonIcon>
-              <Link to={"/completed"}>
+            <Link to={"/completed"}>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <IonIcon icon={list}></IonIcon>
                 <Typography sx={{ fontSize: "13px" }}>Hecho</Typography>
-              </Link>
-            </IconButton>
+              </IconButton>
+            </Link>
           </li>
         </ul>
       </Box>

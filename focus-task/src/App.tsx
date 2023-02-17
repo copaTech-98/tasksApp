@@ -1,4 +1,4 @@
-import { Redirect, Route } from "react-router-dom";
+import { Link, Redirect, Route } from "react-router-dom";
 import {
   IonApp,
   IonIcon,
@@ -36,6 +36,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { useState } from "react";
 import Landing from "./pages/Landing/Landing";
+import { Box } from "@mui/system";
 
 setupIonicReact();
 
@@ -49,27 +50,29 @@ const App: React.FC = () => {
   const [taskDone, setTaskDone] = useState<task[]>([]);
   const [actual, setActual] = useState("");
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonRouterOutlet>
-          <Route exact path="/home">
-            <Tab1
-              taskDone={taskDone}
-              setTaskDone={setTaskDone}
-              actual={actual}
-              setActual={setActual}
-            />
-          </Route>
-          <Route exact path="/timer">
-            <Tab2 actual={actual} setActual={setActual} />
-          </Route>
-          <Route exact path="/completed">
-            <Tab3 taskDone={taskDone} setTaskDone={setTaskDone} />
-          </Route>
-          <Route exact path="/" component={Landing}></Route>
-        </IonRouterOutlet>
-      </IonReactRouter>
-    </IonApp>
+    <>
+      <IonApp>
+        <IonReactRouter>
+          <IonRouterOutlet>
+            <Route exact path="/home">
+              <Tab1
+                taskDone={taskDone}
+                setTaskDone={setTaskDone}
+                actual={actual}
+                setActual={setActual}
+              />
+            </Route>
+            <Route exact path="/timer">
+              <Tab2 actual={actual} setActual={setActual} />
+            </Route>
+            <Route exact path="/completed">
+              <Tab3 taskDone={taskDone} setTaskDone={setTaskDone} />
+            </Route>
+            <Route exact path="/" component={Landing}></Route>
+          </IonRouterOutlet>
+        </IonReactRouter>
+      </IonApp>
+    </>
   );
 };
 export default App;
