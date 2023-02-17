@@ -1,0 +1,7 @@
+{
+  "name": "FocusTask",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
