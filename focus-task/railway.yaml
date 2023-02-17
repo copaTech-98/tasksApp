@@ -17,4 +17,4 @@ build:
 
 start:
   web:
-    command: "ionic serve"
+    command: "ionic serve --external"

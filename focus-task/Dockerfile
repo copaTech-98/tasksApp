@@ -14,5 +14,5 @@ RUN npm i -g @ionic/cli && npm install
 RUN ionic build
 
 # Especifica el comando para ejecutar la aplicación
-CMD ["ionic", "serve"]
+CMD ["ionic", "serve --external"]
 
