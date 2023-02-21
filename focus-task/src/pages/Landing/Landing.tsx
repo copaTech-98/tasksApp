@@ -18,12 +18,12 @@ const Landing = () => {
       const data = await store.get("user");
       data ? setLogin(true) : setLogin(false);
     })();
-    GoogleAuth.initialize({
-      clientId:
-        "806940456122-vs0lt13vtcaukcapft1fuji5kj7k0moh.apps.googleusercontent.com",
-      scopes: ["profile", "email"],
-      grantOfflineAccess: true,
-    });
+    // GoogleAuth.initialize({
+    //   clientId:
+    //     "806940456122-vs0lt13vtcaukcapft1fuji5kj7k0moh.apps.googleusercontent.com",
+    //   scopes: ["profile", "email"],
+    //   grantOfflineAccess: true,
+    // });
   }, []);
 
   async function signIn(): Promise<void> {

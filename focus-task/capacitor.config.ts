@@ -14,7 +14,7 @@ const config: CapacitorConfig = {
         "profile",
         "email"
       ],
-      serverClientId: "806940456122-h8g6iveqt8h0ilhn2u03k0jl2abhvgn1.apps.googleusercontent.com",
+      serverClientId: "806940456122-vs0lt13vtcaukcapft1fuji5kj7k0moh.apps.googleusercontent.com",
       forceCodeForRefreshToken: true
     }
   }
